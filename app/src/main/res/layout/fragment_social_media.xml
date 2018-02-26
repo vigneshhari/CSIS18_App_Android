@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ls.ui.fragment.SocialMediaFragment">
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_social_media" />
+
+        <com.ls.ui.view.FontTextView
+            android:id="@+id/EmptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_placeholder_text"
+            android:gravity="center_horizontal"
+            android:text="@string/placeholder_social_media"
+            android:textColor="@color/placeholder_text"
+            android:textSize="@dimen/text_size_placeholder"
+            app:custom_font="@string/regular_font" />
+    </LinearLayout>
+
+    <!--<com.ls.ui.view.FontTextView-->
+    <!--android:id="@+id/EmptyView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:visibility="gone"-->
+    <!--app:custom_font="@string/regular_font"-->
+    <!--android:textSize="@dimen/text_size_medium"-->
+    <!--android:textColor="@color/grey_100"-->
+    <!--android:text="@string/NoConnectionMessage"/>-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="@dimen/padding_small"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:elevation="2dp"
+        android:background="@drawable/progressbar_bg"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:theme="@style/CircularProgress"
+        />
+
+</FrameLayout>
