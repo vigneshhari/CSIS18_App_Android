@@ -299,7 +299,7 @@ public class EventsAdapter extends BaseAdapter {
             holder.marginDivider.setVisibility(View.VISIBLE);
         } else {
             holder.divider.setVisibility(View.VISIBLE);
-            holder.marginDivider.setVisibility(View.GONE);
+            holder.marginDivider.setVisibility(View.VISIBLE);
         }
     }
 
@@ -316,7 +316,7 @@ public class EventsAdapter extends BaseAdapter {
         layoutRoot.setBackgroundResource(R.drawable.selector_light);
 
         long eventType = event.getType();
-        if ( eventType == Type.REGISTRATION || eventType == Type.LUNCH || eventType == Type.REGISTRATION) {
+        if ( eventType == Type.HI_TEA || eventType == Type.REGISTRATION || eventType == Type.LUNCH || eventType == Type.REPORTING_TIME || eventType == Type.DINNER || eventType == Type.BREAKFAST || eventType == Type.SPONSOR_SPACE || eventType == Type.LIGHTING_LAMP ) {
             layoutRoot.setBackgroundColor(context.getResources().getColor(R.color.black_20_trans));
             layoutRoot.setClickable(false);
         } else {

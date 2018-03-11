@@ -12,6 +12,7 @@ import com.twitter.sdk.android.tweetui.SearchTimeline;
 import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -74,10 +75,11 @@ public class SocialMediaFragment extends Fragment {
         }
 
         String searchQuery = PreferencesManager.getInstance().getTwitterSearchQuery();
-
+        Log.e("ERR" , "REACH HERE");
         final SearchTimeline userTimeline = new SearchTimeline.Builder()
-                .query(searchQuery)
+                .query("#CSIS18")
                 .build();
+        Log.e("ERR" , "REACH HERE AGAIN");
         final TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(rootView.getContext())
                 .setTimeline(userTimeline)
                 .build();

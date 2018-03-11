@@ -4,6 +4,6 @@
     <string name="api_value_base_url">http://csis.herokuapp.com/</string>
     <!--<string name="api_value_base_url">http://baltimore2017.connfa.com/api/v2/</string>-->
     <string name="api_value_google_maps_api_key">AIzaSyByvaKKix3NkBvnD53nHPIILQidAB6-OJE</string>
-    <string name="api_value_twitter_api_key">Mxl1GoGSM98T3jTIWdlUuqXmh</string>
-    <string name="api_value_twitter_secret">UM74rykaGhxPhhKED2KxJrd6zGBLNWgVsGdlzjdSwSNqLTiyqY</string>
+    <string name="api_value_twitter_api_key">84066963-liRi9dPB3a4qINrrQyxf2gkOUmeclhou9AdxxMq3B</string>
+    <string name="api_value_twitter_secret">SFqqMyk2rn1i9uzzMbsVYBsP00S78ejpaPVwai8x1vSxC</string>
 </resources>

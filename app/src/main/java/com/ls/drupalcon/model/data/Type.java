@@ -28,6 +28,22 @@ public class Type extends AbstractEntity<Long> {
     public static final int DINNER = 12;
     public static final int INTERVIEWS = 13;
     public static final int BREAKFAST = 14;
+    public static final int ENVIRONMENT = 15;
+    public static final int HANDING_OVER = 16;
+    public static final int AWARDS = 17;
+    public static final int VOLUNTEER_1 = 18;
+    public static final int SPECIAL_EVENT = 19;
+    public static final int KITE = 20;
+    public static final int VOLUNTEER_2 = 21;
+
+    public static final int TEMPLE_1 = 22;
+    public static final int TEMPLE_2 = 23;
+    public static final int BUS = 24;
+    public static final int STUPA = 25;
+    public static final int HOT_SPRING = 26;
+    public static final int UNIVERSITY = 27;
+    public static final int MUESEUM = 28;
+
 
 
 
@@ -106,12 +122,59 @@ public class Type extends AbstractEntity<Long> {
         switch ((int) typeId) {
 
             case Type.REPORTING_TIME:
-                return R.drawable.ic_program_speach_of_the_day;
-
+                return R.drawable.ic_clock;
             case Type.REGISTRATION:
-                return R.drawable.ic_program_speach_of_the_day;
-
-
+                return R.drawable.ic_registration;
+            case Type.LANG_CHALLENGE:
+                return R.drawable.ic_lang_challenge ;
+            case Type.LUNCH:
+                 return R.drawable.ic_lunch;
+            case Type.LIGHTING_LAMP:
+                return R.drawable.ic_light_lamp;
+            case Type.INTRODUCTION_EVENT:
+                return R.drawable.ic_start;
+            case Type.SPONSOR_SPACE:
+                return R.drawable.ic_sponsor;
+            case Type.TALK:
+                return R.drawable.ic_talk;
+            case Type.HI_TEA:
+                return R.drawable.ic_tea;
+            case Type.WORKSHOP:
+                return R.drawable.ic_workshop;
+            case Type.DINNER:
+                return R.drawable.ic_dinner;
+            case Type.INTERVIEWS:
+                return R.drawable.ic_interview;
+            case Type.BREAKFAST:
+                return R.drawable.ic_breakfast;
+            case Type.ENVIRONMENT:
+                return R.drawable.ic_environment;
+            case Type.HANDING_OVER:
+                return R.drawable.ic_hand_over;
+            case Type.VOLUNTEER_1:
+                return R.drawable.ic_volunteer1;
+            case Type.VOLUNTEER_2:
+                return R.drawable.ic_volunteer2;
+            case Type.AWARDS:
+                return R.drawable.ic_award;
+            case Type.SPECIAL_EVENT:
+                return R.drawable.ic_special_event;
+            case Type.KITE:
+                return R.drawable.ic_kite;
+            case Type.TEMPLE_1:
+                return R.drawable.ic_temple;
+            case Type.TEMPLE_2:
+                return R.drawable.ic_temple2;
+            case Type.BUS:
+                return R.drawable.ic_bus;
+            case Type.STUPA:
+                return R.drawable.ic_stupa;
+            case Type.HOT_SPRING:
+                return R.drawable.ic_hot_spring;
+            case Type.UNIVERSITY:
+                return R.drawable.ic_university;
+            case Type.MUESEUM:
+                return R.drawable.ic_muesuem;
             default:
                 return 0;
         }

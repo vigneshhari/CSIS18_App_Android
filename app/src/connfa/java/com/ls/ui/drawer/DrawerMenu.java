@@ -16,7 +16,7 @@ public class DrawerMenu {
         result.add(new DrawerMenuItem(R.string.Sessions, R.drawable.menu_icon_program, R.drawable.menu_icon_program_sel, EventMode.Program, false));
         //result.add(new DrawerMenuItem(R.string.bofs, R.drawable.menu_icon_bofs, R.drawable.menu_icon_bofs_sel, EventMode.Bofs, false));
         result.add(new DrawerMenuItem(R.string.social_events, R.drawable.menu_icon_social_events, R.drawable.menu_icon_social_events_sel, EventMode.Social, false));
-        result.add(new DrawerMenuItem(R.string.social_media, R.drawable.menu_icon_social_media, R.drawable.menu_icon_social_media_sel, EventMode.SocialMedia, true));
+        //result.add(new DrawerMenuItem(R.string.social_media, R.drawable.menu_icon_social_media, R.drawable.menu_icon_social_media_sel, EventMode.SocialMedia, true));
         result.add(new DrawerMenuItem(R.string.my_schedule, R.drawable.menu_icon_my_schedule, R.drawable.menu_icon_my_schedule_sel, EventMode.Favorites, false));
         result.add(new DrawerMenuItem(R.string.floor_plan, R.drawable.menu_icon_floor_plan, R.drawable.menu_icon_floor_plan_sel, EventMode.FloorPlan, false));
         result.add(new DrawerMenuItem(R.string.location, R.drawable.menu_icon_location, R.drawable.menu_icon_location_sel, EventMode.Location, false));
@@ -29,4 +29,6 @@ public class DrawerMenu {
     public static DrawerMenuItem getMyScheduleDrawerMenuItem(){
         return getNavigationDrawerItems().get(MY_SCHEDULE_POSITION);
     }
+
+
 }
